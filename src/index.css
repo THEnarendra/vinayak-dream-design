@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hollow + Animated Fill Text in White */
+.animated-fill {
+  color: transparent;
+  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-color: white;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-fill::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  overflow: hidden;
+  white-space: nowrap;
+  color: white;
+  -webkit-text-stroke: 0;
+  animation: fillText 3s infinite alternate ease-in-out;
+}
+
+@keyframes fillText {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
