@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Phone, MessageCircle, ArrowDown } from "lucide-react";
 import project1 from "../assets/project1.jpg";
 import project2 from "../assets/project2.jpg";
-import project3 from "../assets/project1.jpg";
+import project3 from "../assets/project3.jpeg";
 import heroBg from "../assets/hero-bg.jpeg";
 
 export default function HeroSection() {
