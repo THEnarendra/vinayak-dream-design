@@ -39,7 +39,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-bold text-primaryBrown mb-6">Vinayak Dream Design</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Creating architectural excellence that stands the test of time. 
+              Creating your Dreams into Reality
               We transform visions into reality with innovative designs and 
               meticulous attention to detail.
             </p>
@@ -97,21 +97,19 @@ export default function Footer() {
               <div className="flex items-start">
                 <MapPin className="w-5 h-5 text-primaryBrown mr-4 mt-1 flex-shrink-0" />
                 <span className="text-gray-300">
-                  123 Design Street,<br />
-                  Architectural District,<br />
-                  Jaipur, Rajasthan 302001
+                  Govindam Tower, Govindpura, Jaipur, Rajasthan
                 </span>
               </div>
               <div className="flex items-center">
                 <Phone className="w-5 h-5 text-primaryBrown mr-4 flex-shrink-0" />
-                <a href="tel:+919999999999" className="text-gray-300 hover:text-primaryBrown transition-colors duration-300">
-                  +91 99999 99999
+                <a href="tel:+919660225994" className="text-gray-300 hover:text-primaryBrown transition-colors duration-300">
+                  +91 96602 25994
                 </a>
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-primaryBrown mr-4 flex-shrink-0" />
-                <a href="mailto:info@vinayakdreamdesign.com" className="text-gray-300 hover:text-primaryBrown transition-colors duration-300">
-                  info@vinayakdreamdesign.com
+                <a href="mailto:vinayakdreamdesign22@gmail.com" className="text-gray-300 hover:text-primaryBrown transition-colors duration-300">
+                  vinayakdreamdesign22@gmail.com
                 </a>
               </div>
             </div>
@@ -120,7 +118,7 @@ export default function Footer() {
             <div className="mt-6 p-4 bg-primaryBrown/10 rounded-lg border border-primaryBrown/20">
               <p className="text-sm text-gray-300 mb-3">Have a project in mind?</p>
               <a
-                href="https://wa.me/919999999999"
+                href="https://wa.me/919660225994"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-primaryBrown text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition-all duration-300"
@@ -140,11 +138,11 @@ export default function Footer() {
           <div className="text-gray-400 text-sm">
             © {currentYear} Vinayak Dream Design. All rights reserved.
           </div>
-          <div className="flex space-x-6 text-sm text-gray-400">
+          {/* <div className="flex space-x-6 text-sm text-gray-400">
             <a href="#" className="hover:text-primaryBrown transition-colors duration-300">Privacy Policy</a>
             <a href="#" className="hover:text-primaryBrown transition-colors duration-300">Terms of Service</a>
             <a href="#" className="hover:text-primaryBrown transition-colors duration-300">Cookie Policy</a>
-          </div>
+          </div> */}
         </div>
 
         {/* Back to Top Button */}

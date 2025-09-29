@@ -33,7 +33,7 @@ export default function IntroSection() {
 
   // Cities for the scrolling marquee
   const cities = [
-    "Vaishali Nagar", "Mansarovar", "Jagatpura", "Civil Lines", "Dhawas", "Kalwar"
+    "Vaishali Nagar", "Mansarovar", "Jagatpura", "Civil Lines", "Dhawas", "Kalwar", "C-Scheme", "Malviya Nagar", "Gopalpura", "Pratap Nagar", "Sodala"
   ];
 
   return (

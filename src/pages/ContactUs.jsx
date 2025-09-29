@@ -49,19 +49,19 @@ export default function ContactUs() {
     {
       icon: Phone,
       title: "Phone",
-      content: "+91 99999 99999",
-      link: "tel:+919999999999"
+      content: "+91 9660225994",
+      link: "tel:+919660225994"
     },
     {
       icon: Mail,
       title: "Email",
-      content: "info@vinayakdreamdesign.com",
-      link: "mailto:info@vinayakdreamdesign.com"
+      content: "vinayakdreamdesign22@gmail.com",
+      link: "mailto:vinayakdreamdesign22@gmail.com"
     },
     {
       icon: MapPin,
       title: "Address",
-      content: "123 Design Street, Architectural District, Jaipur, Rajasthan 302001"
+      content: "Govindam Tower, Govindpura, Jaipur, Rajasthan"
     },
     {
       icon: Clock,
@@ -172,7 +172,7 @@ export default function ContactUs() {
               >
                 <h3 className="font-semibold text-darkGray mb-4">Quick Response via WhatsApp</h3>
                 <a
-                  href="https://wa.me/919999999999"
+                  href="https://wa.me/919660225994"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 bg-primaryBrown text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300"
@@ -346,7 +346,7 @@ export default function ContactUs() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.a
-                href="tel:+919999999999"
+                href="tel:+919660225994"
                 className="inline-flex items-center px-8 py-4 bg-white text-primaryBrown rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -355,7 +355,7 @@ export default function ContactUs() {
                 Call Now
               </motion.a>
               <motion.a
-                href="https://wa.me/919999999999"
+                href="https://wa.me/919660225994"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-4 bg-darkGray text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300"

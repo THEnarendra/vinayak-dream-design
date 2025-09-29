@@ -129,7 +129,7 @@ export default function HeroSection() {
           transition={{ delay: 1, duration: 0.8 }}
         >
           <motion.a 
-            href="tel:+919999999999" 
+            href="tel:+919660225994" 
             className="px-5 py-3 sm:px-6 sm:py-3 bg-primaryBrown text-white font-medium rounded-md flex items-center justify-center gap-2 hover:bg-opacity-90 transition-all duration-300 shadow-lg group"
             whileHover={{ scale: 1.03, y: -2 }} 
             whileTap={{ scale: 0.98 }}
@@ -139,7 +139,7 @@ export default function HeroSection() {
           </motion.a>
           
           <motion.a 
-            href="https://wa.me/919999999999" 
+            href="https://wa.me/919660225994" 
             target="_blank" 
             rel="noreferrer" 
             className="px-5 py-3 sm:px-6 sm:py-3 bg-white text-primaryBrown font-medium rounded-md flex items-center justify-center gap-2 hover:bg-gray-100 transition-all duration-300 shadow-lg group"

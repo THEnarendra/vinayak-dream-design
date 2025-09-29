@@ -36,8 +36,9 @@ export default function Navbar() {
               className="flex items-center gap-2 transition-transform hover:scale-105 duration-200"
               onClick={handleLinkClick}
             >
+              <img src="/logo.png" alt="Logo" className="w-16 h-16" />
               <span
-                className={`font-bold text-xl md:text-2xl transition ${
+                className={`font-bold text-xl md:text-xl transition ${
                   scrolled
                     ? "text-primaryBrown"
                     : "text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]"
@@ -50,7 +51,7 @@ export default function Navbar() {
             {/* Right: WhatsApp + Hamburger */}
             <div className="flex items-center gap-4">
               <a
-                href="https://wa.me/919999999999"
+                href="https://wa.me/919660225994"
                 target="_blank"
                 rel="noreferrer"
                 className={`px-4 py-2 rounded-full font-medium transition flex items-center gap-2 ${
@@ -131,16 +132,16 @@ export default function Navbar() {
           <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-100">
             <div className="text-sm text-gray-600 mb-2">Get in touch:</div>
             <a 
-              href="tel:+919999999999" 
+              href="tel:+919660225994" 
               className="block text-primaryBrown font-medium hover:underline mb-2"
             >
-              +91 99999 99999
+              +91 96602 25994
             </a>
             <a 
-              href="mailto:info@vinayakdreamdesign.com" 
+              href="mailto:vinayakdreamdesign22@gmail.com" 
               className="block text-primaryBrown font-medium hover:underline"
             >
-              info@vinayakdreamdesign.com
+              vinayakdreamdesign22@gmail.com
             </a>
           </div>
         </div>
