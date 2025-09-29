@@ -111,7 +111,7 @@ export default function Testimonials() {
         {[...Array(5)].map((_, i) => (
           <Star 
             key={i} 
-            className={`w-4 h-4 ${i < rating ? "text-goldenYellow fill-current" : "text-gray-300"}`} 
+            className={`w-3 h-3 sm:w-4 sm:h-4 ${i < rating ? "text-yellow-400 fill-current" : "text-gray-300"}`} 
           />
         ))}
       </div>
@@ -120,8 +120,8 @@ export default function Testimonials() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Banner with Dark Gray Background */}
-      <section className="relative h-96 bg-darkGray">
+      {/* Hero Banner with Dark Gray Background - Mobile Optimized */}
+      <section className="relative h-64 sm:h-80 md:h-96 bg-darkGray">
         <div className="absolute inset-0 bg-gradient-to-r from-darkGray to-gray-800 opacity-95" />
         
         {/* Content */}
@@ -134,17 +134,17 @@ export default function Testimonials() {
               variants={fadeIn}
             >
               <motion.div 
-                className="w-16 h-1 bg-primaryBrown mx-auto mb-6"
+                className="w-12 sm:w-16 h-1 bg-primaryBrown mx-auto mb-4 sm:mb-6"
                 variants={fadeIn}
               />
               <motion.h1 
-                className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight px-2"
                 variants={fadeIn}
               >
                 Client Testimonials
               </motion.h1>
               <motion.p 
-                className="text-xl text-gray-300 max-w-3xl mx-auto"
+                className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed"
                 variants={fadeIn}
               >
                 Hear what our clients have to say about their experience working with Vinayak Dream Design
@@ -153,9 +153,9 @@ export default function Testimonials() {
           </div>
         </div>
         
-        {/* Breadcrumb Navigation */}
-        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10">
-          <nav className="flex items-center space-x-2 text-sm text-gray-300">
+        {/* Breadcrumb Navigation - Mobile Optimized */}
+        <div className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 z-10">
+          <nav className="flex items-center space-x-2 text-xs sm:text-sm text-gray-300">
             <a href="/" className="hover:text-primaryBrown transition-colors">Home</a>
             <span className="text-gray-400">/</span>
             <span className="text-primaryBrown">Testimonials</span>
@@ -163,11 +163,11 @@ export default function Testimonials() {
         </div>
       </section>
 
-      {/* Testimonial Filters */}
-      <section className="py-12 bg-gray-50">
+      {/* Testimonial Filters - Mobile Optimized */}
+      <section className="py-8 sm:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
-            className="flex flex-wrap justify-center gap-4"
+            className="flex flex-wrap justify-center gap-2 sm:gap-4"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -177,7 +177,7 @@ export default function Testimonials() {
               <motion.button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+                className={`px-4 py-2 sm:px-6 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${
                   activeCategory === category.id
                     ? "bg-primaryBrown text-white shadow-md"
                     : "bg-white text-darkGray shadow-sm hover:bg-primaryBrown hover:text-white"
@@ -193,11 +193,11 @@ export default function Testimonials() {
         </div>
       </section>
 
-      {/* Testimonials Grid */}
-      <section className="py-20">
+      {/* Testimonials Grid - Mobile Optimized */}
+      <section className="py-12 sm:py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -206,24 +206,24 @@ export default function Testimonials() {
             {filteredTestimonials.map((testimonial) => (
               <motion.div
                 key={testimonial.id}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
+                className="bg-white rounded-lg sm:rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
                 variants={fadeIn}
-                whileHover="hover"
+                whileHover={{ y: -8 }}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
               >
-                <div className="p-8 relative">
+                <div className="p-4 sm:p-6 md:p-8 relative">
                   {/* Quote icon */}
-                  <Quote className="w-12 h-12 text-primaryBrown opacity-20 absolute top-6 right-6" />
+                  <Quote className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-primaryBrown opacity-20 absolute top-4 sm:top-6 right-4 sm:right-6" />
                   
                   {/* Rating */}
-                  <div className="mb-6">
+                  <div className="mb-4 sm:mb-6">
                     <StarRating rating={testimonial.rating} />
                   </div>
                   
                   {/* Testimonial text */}
-                  <p className="text-gray-600 italic text-lg leading-relaxed mb-6">
+                  <p className="text-gray-600 italic text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6">
                     "{testimonial.text}"
                   </p>
                   
@@ -231,19 +231,19 @@ export default function Testimonials() {
                   <div className="flex items-center">
                     <img 
                       src={testimonial.image} 
-                      alt={testimonial.client}
-                      className="w-14 h-14 rounded-full object-cover mr-4"
+                      alt={`${testimonial.client} - ${testimonial.project}`}
+                      className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full object-cover mr-3 sm:mr-4"
                     />
                     <div>
-                      <h4 className="font-semibold text-darkGray">{testimonial.client}</h4>
-                      <p className="text-primaryBrown text-sm">{testimonial.project}</p>
+                      <h4 className="font-semibold text-darkGray text-sm sm:text-base">{testimonial.client}</h4>
+                      <p className="text-primaryBrown text-xs sm:text-sm">{testimonial.project}</p>
                     </div>
                   </div>
                 </div>
                 
                 {/* Category badge */}
-                <div className="px-8 pb-6">
-                  <span className="inline-block px-3 py-1 bg-lightBeige text-primaryBrown text-xs font-medium rounded-full capitalize">
+                <div className="px-4 sm:px-6 md:px-8 pb-4 sm:pb-6">
+                  <span className="inline-block px-2 py-1 bg-lightBeige text-primaryBrown text-xs font-medium rounded-full capitalize">
                     {testimonial.category}
                   </span>
                 </div>
@@ -253,38 +253,38 @@ export default function Testimonials() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-20 bg-primaryBrown text-white">
+      {/* Stats Section - Mobile Optimized */}
+      <section className="py-12 sm:py-16 md:py-20 bg-primaryBrown text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
+            className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 md:gap-8 text-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerChildren}
           >
-            <motion.div variants={fadeIn}>
-              <div className="text-4xl md:text-5xl font-bold mb-2">150+</div>
-              <div className="text-gray-200">Happy Clients</div>
+            <motion.div variants={fadeIn} className="p-4">
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-1 sm:mb-2">150+</div>
+              <div className="text-gray-200 text-xs sm:text-sm">Happy Clients</div>
             </motion.div>
-            <motion.div variants={fadeIn}>
-              <div className="text-4xl md:text-5xl font-bold mb-2">98%</div>
-              <div className="text-gray-200">Satisfaction Rate</div>
+            <motion.div variants={fadeIn} className="p-4">
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-1 sm:mb-2">98%</div>
+              <div className="text-gray-200 text-xs sm:text-sm">Satisfaction Rate</div>
             </motion.div>
-            <motion.div variants={fadeIn}>
-              <div className="text-4xl md:text-5xl font-bold mb-2">24+</div>
-              <div className="text-gray-200">Years Experience</div>
+            <motion.div variants={fadeIn} className="p-4">
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-1 sm:mb-2">24+</div>
+              <div className="text-gray-200 text-xs sm:text-sm">Years Experience</div>
             </motion.div>
-            <motion.div variants={fadeIn}>
-              <div className="text-4xl md:text-5xl font-bold mb-2">27</div>
-              <div className="text-gray-200">Awards Won</div>
+            <motion.div variants={fadeIn} className="p-4">
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-1 sm:mb-2">27</div>
+              <div className="text-gray-200 text-xs sm:text-sm">Awards Won</div>
             </motion.div>
           </motion.div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gray-50">
+      {/* CTA Section - Mobile Optimized */}
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial="hidden"
@@ -292,14 +292,16 @@ export default function Testimonials() {
             viewport={{ once: true }}
             variants={fadeIn}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-darkGray mb-6">Ready to Share Your Experience?</h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-darkGray mb-4 sm:mb-6 leading-tight px-2">
+              Ready to Share Your Experience?
+            </h2>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 px-2 leading-relaxed">
               Join our growing list of satisfied clients and let us bring your architectural vision to life
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <motion.a
                 href="/contact"
-                className="inline-flex items-center px-8 py-4 bg-primaryBrown text-white rounded-md font-semibold hover:bg-opacity-90 transition-all duration-300"
+                className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-primaryBrown text-white rounded-md font-semibold hover:bg-opacity-90 transition-all duration-300 text-sm sm:text-base"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -307,7 +309,7 @@ export default function Testimonials() {
               </motion.a>
               <motion.a
                 href="/projects"
-                className="inline-flex items-center px-8 py-4 border border-primaryBrown text-primaryBrown rounded-md font-semibold hover:bg-primaryBrown hover:text-white transition-all duration-300"
+                className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 border border-primaryBrown text-primaryBrown rounded-md font-semibold hover:bg-primaryBrown hover:text-white transition-all duration-300 text-sm sm:text-base"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -319,4 +321,4 @@ export default function Testimonials() {
       </section>
     </div>
   );
-}
+}      

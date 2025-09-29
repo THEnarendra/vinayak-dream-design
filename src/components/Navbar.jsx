@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Left: Logo/Name */}
-            <Link 
+            {/* <Link 
               to="/" 
               className="flex items-center gap-2 transition-transform hover:scale-105 duration-200"
               onClick={handleLinkClick}
@@ -46,7 +46,28 @@ export default function Navbar() {
               >
                 Vinayak Dream Design
               </span>
-            </Link>
+            </Link> */}
+
+            <Link 
+  to="/" 
+  className="flex items-center gap-2 transition-transform hover:scale-105 duration-200"
+  onClick={handleLinkClick}
+>
+  <img 
+    src="/logo.png" 
+    alt="Vinayak Dream Design Logo" 
+    className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16" 
+  />
+  <span
+    className={`font-bold text-lg sm:text-xl md:text-2xl transition whitespace-nowrap ${
+      scrolled
+        ? "text-primaryBrown"
+        : "text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]"
+    }`}
+  >
+    Vinayak Dream Design
+  </span>
+</Link>
 
             {/* Right: WhatsApp + Hamburger */}
             <div className="flex items-center gap-4">
