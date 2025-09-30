@@ -61,6 +61,7 @@ import E8 from './elevations/E8.jpeg';
 import E9 from './elevations/E9.jpeg';
 import E10 from './elevations/E10.jpeg';
 
+import rakeshji from './team/rakeshji.jpg';
 
 
 // import skylineVilla2 from './projects/skyline-villa-2.jpg';
@@ -242,6 +243,12 @@ export const elevationImages = {
   E8,
   E9,
   E10
+};
+
+export const teamImages = {
+  team1: rakeshji,
+  // team2,
+  // team3
 };
 
 // Export individual images for direct access

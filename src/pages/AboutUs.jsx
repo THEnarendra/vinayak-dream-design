@@ -1,15 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Award, Users, Clock, Heart, ArrowRight } from "lucide-react";
+import { teamImages } from "../assets/ProjectImages";
 
 export default function AboutUs() {
   // Team members data
   const teamMembers = [
     {
-      name: "Vinayak Sharma",
-      role: "Principal Architect",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-      bio: "With over 15 years of experience, Vinayak specializes in sustainable design and innovative architectural solutions."
+      name: "Rakesh Kumawat",
+      role: "Principal Architect & Founder",
+      image: teamImages.team1,
+      bio: "With over 15 years of experience, Rakesh specializes in sustainable design and innovative architectural solutions."
     },
     {
       name: "Priya Mehta",
